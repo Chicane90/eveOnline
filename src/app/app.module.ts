@@ -4,17 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { PicorptaxService } from './picorptax/picorptax.service'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [PicorptaxService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
