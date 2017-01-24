@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 import { PicorptaxService } from './picorptax/picorptax.service';
-import { OnInit } from '@angular/core';
-import { Subscriber } from 'rxjs'
-import { Observable } from 'rxjs/Observable';
 import { PiCorpTax } from './picorptax/picorptax';
 
 @Component({
@@ -11,9 +8,9 @@ import { PiCorpTax } from './picorptax/picorptax';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   picorptax: PiCorpTax[] = [];
-  
+
   constructor(private _picorptaxService: PicorptaxService) {
 
   }

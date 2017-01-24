@@ -2,16 +2,31 @@
 <app-navbar></app-navbar>
 </div>
 
-<div class="container">
 
-  <table class="table table-responsive">
-    <tr class="">
-      <th class="text-center" >Name</th>
-      <th class="text-center">ISK</th>
-    </tr>
-    <tr *ngFor='let picorptaxKey of picorptax'>
-      <td class="text-center">{{ picorptaxKey.user }}</td>
-      <td class="text-center">{{ picorptaxKey.amount | number:'1.2-2' }}</td>
-    </tr>
-  </table>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <!-- Empty Column for left Side -->
+    </div>
+    <div class="col-lg-6">
+
+        <table class="table table-responsive">
+          <tr class="">
+            <th class="text-center" >Name</th>
+            <th class="text-center">ISK</th>
+          </tr>
+          <tr *ngFor='let picorptaxKey of picorptax'>
+            <td class="text-center">{{ picorptaxKey.user }}</td>
+            <td class="text-center">{{ picorptaxKey.amount | number:'1.2-2' }}</td>
+          </tr>
+        </table>
+    </div>
+    <div class="col-md-3">
+
+      <request-form></request-form>
+      <br />
+      <button class="btn btn-danger">Call EVE-Api</button>
+    </div>
+  </div>
 </div>

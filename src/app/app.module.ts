@@ -7,10 +7,13 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PicorptaxService } from './picorptax/picorptax.service'
 
+import { RequestFormComponent } from './planetaryInteraction/request-form.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    RequestFormComponent
   ],
   imports: [
     BrowserModule,
