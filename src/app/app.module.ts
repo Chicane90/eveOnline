@@ -7,20 +7,34 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PicorptaxService } from './picorptax/picorptax.service'
 
+import { routing } from './app.routing';
+
 import { RequestFormComponent } from './planetaryInteraction/request-form.component';
+import { PlanetaryInteractionComponent } from './planetaryInteraction/planetaryInteraction.component';
+import { TaxTableComponent } from './planetaryInteraction/tax-table.component';
+import { NotFoundComponent } from './notFound/notFound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    RequestFormComponent
+    RequestFormComponent,
+    PlanetaryInteractionComponent,
+    TaxTableComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
+  ],
+  exports: [
+    RequestFormComponent
   ],
   providers: [PicorptaxService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
