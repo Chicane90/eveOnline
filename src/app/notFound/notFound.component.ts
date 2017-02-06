@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'notFound',
-  template: "oooops - seems this Site doesn't exist already"
+  template: '<h1 class="page-header">ooops - seems this Site doesnt exist</h1>'
 })
 export class NotFoundComponent {
 

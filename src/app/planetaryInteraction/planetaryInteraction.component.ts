@@ -2,7 +2,7 @@ import {Component} from "@angular/core";
 
 @Component({
   selector: 'planetaryInteraction',
-  template: '<taxTable></taxTable><request-form></request-form>'
+  templateUrl: './planetaryInteraction.component.html'
 })
 export class PlanetaryInteractionComponent {
 

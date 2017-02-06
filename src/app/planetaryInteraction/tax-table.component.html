@@ -1,10 +1,12 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-      <!-- Empty Column for left Side -->
-    </div>
-    <div class="col-lg-6">
 
+      <div *ngIf="isLoading">
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+            <span>Loading</span>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!isLoading">
       <table class="table table-responsive">
         <tr class="">
           <th class="text-center" >Name</th>
@@ -15,10 +17,4 @@
           <td class="text-center">{{ picorptaxKey.amount | number:'1.2-2' }}</td>
         </tr>
       </table>
-    </div>
-    <div class="col-md-3">
-
-      <request-form></request-form>
-    </div>
-  </div>
-</div>
+      </div>

@@ -13,6 +13,7 @@ import { RequestFormComponent } from './planetaryInteraction/request-form.compon
 import { PlanetaryInteractionComponent } from './planetaryInteraction/planetaryInteraction.component';
 import { TaxTableComponent } from './planetaryInteraction/tax-table.component';
 import { NotFoundComponent } from './notFound/notFound.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './notFound/notFound.component';
     RequestFormComponent,
     PlanetaryInteractionComponent,
     TaxTableComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
