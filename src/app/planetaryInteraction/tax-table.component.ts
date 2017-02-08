@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import { PicorptaxService } from '../picorptax/picorptax.service';
 import { PiCorpTax } from '../picorptax/picorptax';
-import {delay} from "rxjs/operator/delay";
 
 @Component({
   selector: 'taxTable',
@@ -9,9 +8,8 @@ import {delay} from "rxjs/operator/delay";
 })
 export class TaxTableComponent {
 
-  isLoading = true;
-
-  picorptax: PiCorpTax[] = [];
+  @Input() isLoading = true;
+  @Input() picorptax: PiCorpTax[] = [];
 
   constructor(private _picorptaxService: PicorptaxService) {
 

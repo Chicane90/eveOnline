@@ -16,6 +16,25 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascript/bootstrap-datepicker.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#startDate').datepicker({
+        format: "dd-mm-yyyy",
+        clearBtn: true,
+        language: "de",
+        autoclose: true
+      });
+    });
+
+    $(document).ready(function () {
+      $('#endDate').datepicker({
+        format: "dd-mm-yyyy",
+        clearBtn: true,
+        language: "de",
+        autoclose: true
+      });
+    });
+  </script>
 
 </head>
 <body>
