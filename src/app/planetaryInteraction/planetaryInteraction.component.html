@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <!-- Empty Column for left Side -->
+    </div>
+    <div class="col-lg-6">
+      <taxTable [picorptax]="picorptax" [isLoading]="isLoading"></taxTable>
+    </div>
+    <div class="col-md-3">
+      <request-form  (buttonSubmitClicked)="reloadTaxTable($event)"></request-form>
+    </div>
+  </div>
+</div>
