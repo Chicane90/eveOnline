@@ -1,3 +1,5 @@
+
+[![Build Status](https://travis-ci.org/Chicane90/eveOnline.svg?branch=master)](https://travis-ci.org/Chicane90/eveOnline)
 [![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen)
 
 ## Development server
