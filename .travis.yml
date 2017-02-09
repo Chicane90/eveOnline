@@ -1,0 +1,28 @@
+sudo: required
+dist: trusty
+
+language: java
+
+jdk:
+  - oraclejdk8
+
+notifications:
+  email: false
+
+# Matrix failure enabled for https://github.com/TheLarkInn/LazyParseWebpackPlugin/issues/6
+matrix:
+  fast_finish: true
+
+before_script:
+  - nvm install 6 # run the build with node version 6.x
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+
+
+# overall build order:
+# 1) space-client
+
+script:
+  - npm install
+  - npm run ci
