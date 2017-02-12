@@ -14,6 +14,7 @@ import { PlanetaryInteractionComponent } from './planetaryInteraction/planetaryI
 import { TaxTableComponent } from './planetaryInteraction/tax-table.component';
 import { NotFoundComponent } from './notFound/notFound.component';
 import { HomeComponent } from './home/home.component';
+import {DatePickerModule} from "ng2-datepicker";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    DatePickerModule,
     routing
   ],
   exports: [

@@ -8,6 +8,7 @@ import {NgForm} from "@angular/forms";
 export class RequestFormComponent {
 
   @Output() buttonSubmitClicked = new EventEmitter();
+  @Output() buttonEVEClicked = new EventEmitter();
 
   buttonSubmit(form: NgForm) {
     console.log(form);
@@ -17,8 +18,9 @@ export class RequestFormComponent {
                                     } );
   }
 
-  buttonEVE() {
-
+  buttonEVE(formEVE: NgForm) {
+    console.log(formEVE);
+    this.buttonEVEClicked.emit();
   }
 
 }

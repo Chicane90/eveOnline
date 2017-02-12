@@ -18,9 +18,15 @@ export class PicorptaxService {
       .map(res => res.json());
   }
 
-  getTopTaxBillerInRange(startDate: Date, endDate: Date): Observable<PiCorpTax[]> {
-    return this._http.get(this._url + startDate + endDate)
+  getTopTaxBillerInRange(startDate: String, endDate: String): Observable<PiCorpTax[]> {
+    return this._http.get(this._url + '?startDate=' + startDate +  '&endDate=' + endDate)
       .map(res => res.json());
   }
+
+  reloadEVEDatabase(): Observable<String> {
+    return this._http.get(this._url + '?reloadEVEDatabase=true')
+      .map(res => res.json());
+  }
+
 
 }

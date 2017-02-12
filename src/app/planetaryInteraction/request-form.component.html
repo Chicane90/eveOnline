@@ -1,12 +1,12 @@
 <div class="affix">
   <form (ngSubmit)="buttonSubmit(f)" #f="ngForm">
     <div class="form-group">
-      <label for="startDate">Start Date</label>
-      <input ngModel name="startDate" id="startDate" type="text" class="form-control" data-provide="datepicker">
+      <label>Start Date</label><br />
+      <ng2-datepicker ngModel name="startDate"></ng2-datepicker>
     </div>
     <div class="form-group">
-      <label for="endDate">End Date</label>
-      <input ngModel name="endDate" id="endDate" type="text" class="form-control" data-provide="datepicker">
+      <label>End Date</label><br />
+      <ng2-datepicker ngModel name="endDate"></ng2-datepicker>
     </div>
     <button class="btn btn-default" type="submit">Submit</button>
     <br /><br />
@@ -15,3 +15,4 @@
     <button class="btn btn-danger">Call EVE-Api</button>
   </form>
 </div>
+
